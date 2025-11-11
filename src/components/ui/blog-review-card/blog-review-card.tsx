@@ -19,6 +19,16 @@ export const BlogReviewCard = ({
 }: BlogReviewCardProps) => (
   <div className="container mx-auto bg-white rounded">
     <img src={`./public/images/blog-review-card/${image}`} alt="" />
-    <div className="card-bg-yellow"></div>
+    <div className="card-bg-yellow">{tag}</div>
+    <div className="">Published {publishedDate}</div>
+    <div className="font-bold text-2xl">{title}</div>
+    <div className="">{description}</div>
+    <div className="flex items-center">
+      <img
+        src={`./public/images/blog-review-card/${author.avatar}`}
+        alt={author.name}
+      />
+      <span>{author.name}</span>
+    </div>
   </div>
 );
