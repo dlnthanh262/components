@@ -10,15 +10,17 @@ https://dlnthanh262.github.io/components/blog-review-card
 
 ## Screenshot
 
-![Screenshot](images/blog-review-card/screenshot.png)
+![Screenshot](./public/images/blog-review-card/screenshot.png)
 
 ## Design system
 
 ### Colors
 
-- Yellow: #f4d04e
-- Gray 950: #111111
-- Gray 500: #6b6b6b
+| Name     | Value     |
+| -------- | --------- |
+| Yellow   | `#f4d04e` |
+| Gray 950 | `#111111` |
+| Gray 500 | `#6b6b6b` |
 
 In my index.css:
 
@@ -48,12 +50,13 @@ How I use in `blog-review-card.css`
 }
 ```
 
-**Note:** You have to put them in component layer or base layer, if not, the styles of utilities layer will overwrite when you use these variables as Tailwind class format. Forexample, `hover:text-(--card-gray-950)` will not work.
+**Note:** You have to put these in `component` layer or `base` layer. Otherwise, the styles of `utilities` layer may override when using Tailwind class syntax. For example, `hover:text-(--card-gray-950)` will not work.
 
 ### Typography
 
-- Font family: Figtree 400 & 800
+- Font family: Figtree
 - Weights: 400, 800
+- I imported this font in index.css as `<link rel="stylesheet">`
 
 ```
   .card-text-preset-1 {
@@ -77,4 +80,18 @@ How I use in `blog-review-card.css`
   }
 ```
 
-**Note:** This is how I usually re-use Tailwind classes to make sure lessing code to maintain.
+**Note:** This is how I usually re-use Tailwind classes to make sure lessing code to maintain: **@apply**
+
+### Related files
+
+```
+components/ui/blog-review-card/
+├── blog-review-card.tsx     # Card logic
+├── blog-review-card.css     # Card styles
+└── README.md
+config/ui/blog-review-card/
+├── component-data.ts        # Component data to display
+└── component-data.types.ts  # Component data template
+types/blog-review-card/
+└── author.ts                # Author template
+```

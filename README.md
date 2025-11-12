@@ -3,7 +3,7 @@
 This is my practice project built with **React + Vite**, focusing on reusable UI Component styled with **TailwindCSS**.
 Feel free to copy any component or even the entire project structure for your learning or studying purposes.
 
-I'm truly grateful for any **feedback, comments, or bug reports** that help me improve these solutions — thank you so much in advance! 💛
+I'm truly grateful for any **feedback, comments, or bug reports** that help me improve these solutions. Thank you so much in advance! 💛
 
 ## Overview
 
