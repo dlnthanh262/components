@@ -1,11 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HomePage, BlogReviewCardPage } from "@/pages";
 import "./App.css";
-import { BlogReviewCard, type BlogReviewCardProps } from "./components/ui";
-import { componentData } from "@/config";
 
 function App() {
-  const blogReviewCardProps =
-    componentData.blogReviewCard as BlogReviewCardProps;
-  return <BlogReviewCard {...blogReviewCardProps} />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route
+          path="/blog-review-card"
+          element={<BlogReviewCardPage />}
+        ></Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
