@@ -1,14 +1,11 @@
 import "./App.css";
 import { BlogReviewCard, type BlogReviewCardProps } from "./components/ui";
-import { siteConfig } from "./config/site-config";
+import { componentData } from "@/config";
 
 function App() {
-  const blogReviewCardProps = siteConfig.blogReviewCard as BlogReviewCardProps;
-  return (
-    <div className="card-bg-yel">
-      <BlogReviewCard {...blogReviewCardProps} />
-    </div>
-  );
+  const blogReviewCardProps =
+    componentData.blogReviewCard as BlogReviewCardProps;
+  return <BlogReviewCard {...blogReviewCardProps} />;
 }
 
 export default App;

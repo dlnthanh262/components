@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer components {
+  .card-bg-yellow {
+    background-color: var(--card-yellow);
+  }
+
+  .card-text-gray-950 {
+    color: var(--card-gray-950);
+  }
+
+  .card-text-gray-500 {
+    color: var(--card-gray-500);
+  }
+
+  .card-text-preset-1 {
+    @apply text-xl;
+    @apply font-extrabold;
+  }
+
+  .card-text-preset-2 {
+    @apply text-sm;
+    @apply font-normal;
+  }
+
+  .card-text-preset-3 {
+    @apply text-xs;
+    @apply font-normal;
+  }
+
+  .card-text-preset-3-bold {
+    @apply text-xs;
+    @apply font-extrabold;
+  }
+}
