@@ -10,7 +10,7 @@ https://dlnthanh262.github.io/components/blog-review-card
 
 ## Screenshot
 
-![Screenshot](./public/images/blog-review-card/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/dlnthanh262/components/main/public/images/blog-review-card/screenshot.png)
 
 ## Design system
 
