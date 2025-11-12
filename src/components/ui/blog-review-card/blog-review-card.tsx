@@ -1,5 +1,6 @@
 import { cn } from "@/utils";
 import "./blog-review-card.css";
+import { siteConfig } from "@/config/site-config";
 import type { Author } from "@/types/blog-review-card";
 import type { HTMLAttributes } from "react";
 
@@ -10,6 +11,7 @@ export type BlogReviewCardProps = {
   image: string;
   author: Author;
   publishedDate: string;
+  className?: string;
 } & HTMLAttributes<HTMLDivElement>;
 
 export const BlogReviewCard = ({
@@ -22,7 +24,7 @@ export const BlogReviewCard = ({
   className,
   ...props
 }: BlogReviewCardProps) => {
-  const imageFolder = "/images/blog-review-card/";
+  const imageFolder = `${siteConfig.imageBasePath}/blog-review-card/`;
   const cardWrapperClassName = cn(
     "bg-white mx-auto w-[327px] md:w-[384px] rounded-[20px] p-6",
     "border border-(--card-gray-950) shadow-[8px_8px_0_0_#000]",

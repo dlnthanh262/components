@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { cn } from "@/utils";
+import { siteConfig } from "@/config";
 
 export type ComponentReviewCardProps = {
   name: string;
@@ -14,7 +15,7 @@ export const ComponentReviewCard = ({
   image,
   path,
 }: ComponentReviewCardProps) => {
-  const imagePath = `images${path}/${image}`;
+  const imagePath = `${siteConfig.imageBasePath}/${path}/${image}`;
   const linkClassName = cn(
     "group p-3 bg-white rounded-lg w-64",
     "transition-transform duration-300 ease-in-out",
