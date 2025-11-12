@@ -22,7 +22,7 @@ https://dlnthanh262.github.io/components/blog-review-card
 | Gray 950 | `#111111` |
 | Gray 500 | `#6b6b6b` |
 
-In my index.css:
+In my `index.css`
 
 ```
 :root {
