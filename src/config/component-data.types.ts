@@ -1,7 +1,7 @@
 export type ComponentData = {
   name: string;
   description: string;
-  image: string;
+  screenshot: string;
   path: string;
   uiProps: Record<string, unknown>[];
 };

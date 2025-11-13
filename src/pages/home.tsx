@@ -7,12 +7,12 @@ const getComponentReviewCardProps = (componentData: ComponentData) =>
   ({
     name: componentData.name,
     description: componentData.description,
-    image: componentData.image,
+    screenshot: componentData.screenshot,
     path: componentData.path,
   } as ComponentReviewCardProps);
 
 export const HomePage = () => (
-  <div className="bg-gray-200 w-screen h-screen flex flex-row items-center justify-center gap-4">
+  <div className="bg-gray-200 w-screen h-screen flex flex-col md:flex-row items-center justify-center gap-8">
     {componentDataList.map((componentData) => {
       const componentReviewCardProps =
         getComponentReviewCardProps(componentData);

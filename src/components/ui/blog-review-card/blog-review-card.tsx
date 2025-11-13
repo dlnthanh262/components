@@ -5,6 +5,7 @@ import type { Author } from "@/types/blog-review-card";
 import type { HTMLAttributes } from "react";
 
 export type BlogReviewCardProps = {
+  path: string;
   tag: "Learning";
   title: string;
   description: string;
@@ -15,6 +16,7 @@ export type BlogReviewCardProps = {
 } & HTMLAttributes<HTMLDivElement>;
 
 export const BlogReviewCard = ({
+  path,
   tag,
   title,
   description,
@@ -24,7 +26,6 @@ export const BlogReviewCard = ({
   className,
   ...props
 }: BlogReviewCardProps) => {
-  const imageFolder = `${siteConfig.imageBasePath}/blog-review-card/`;
   const cardWrapperClassName = cn(
     "bg-white mx-auto w-[327px] md:w-[384px] rounded-[20px] p-6",
     "border border-(--card-gray-950) shadow-[8px_8px_0_0_#000]",
@@ -36,7 +37,7 @@ export const BlogReviewCard = ({
     <div className="figtree w-screen h-screen flex justify-center items-center card-bg-yellow">
       <div className={cardWrapperClassName} {...props}>
         <img
-          src={`${imageFolder}${image}`}
+          src={`${siteConfig.imageBasePath}${path}${image}`}
           alt="blog-review-card-image"
           className="w-full h-auto rounded-[10px]"
         />
@@ -59,7 +60,7 @@ export const BlogReviewCard = ({
         </div>
         <div className="flex items-center gap-3">
           <img
-            src={`${imageFolder}${author.avatar}`}
+            src={`${siteConfig.imageBasePath}${path}${author.avatar}`}
             alt={author.name}
             className="w-8 h-8"
           />
