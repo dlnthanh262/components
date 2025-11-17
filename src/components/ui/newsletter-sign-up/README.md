@@ -1,4 +1,4 @@
-# Blog Review Card
+# Newsletter Sign Up
 
 This is my practice component for **Responsive Newsletter Sign Up Form with Success Dialog**
 
