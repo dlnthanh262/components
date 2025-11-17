@@ -1,7 +1,6 @@
 import { cn } from "@/utils";
 import "./blog-review-card.css";
 import { siteConfig } from "@/config/site-config";
-import type { Author } from "@/types/blog-review-card";
 import type { HTMLAttributes } from "react";
 
 export type BlogReviewCardProps = {
@@ -10,7 +9,10 @@ export type BlogReviewCardProps = {
   title: string;
   description: string;
   image: string;
-  author: Author;
+  author: {
+    name: string;
+    avatar: string;
+  };
   publishedDate: string;
   className?: string;
 } & HTMLAttributes<HTMLDivElement>;

@@ -2,11 +2,19 @@
 
 :root {
   --font-figtree: "Figtree", sans-serif;
+  --font-figtree: "Roboto", sans-serif;
 
   /* Blog view card*/
   --card-yellow: #f4d04e;
   --card-gray-950: #111111;
   --card-gray-500: #6b6b6b;
+
+  /* Newsletter sign up */
+  --newsletter-grey: #949494;
+  --newsletter-blue-800: #242742;
+  --newsletter-blue-700: #36384d;
+  --newsletter-red: #ff6155;
+  --newsletter-gradient: linear-gradient(90deg, #ff6a3a, #ff527b);
 }
 
 @layer base {
@@ -18,6 +26,10 @@
 
   .figtree {
     font-family: var(--font-figtree);
+  }
+
+  .roboto {
+    font-family: var(--font-roboto);
   }
 
   @keyframes fadeInUp {

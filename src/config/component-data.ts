@@ -1,3 +1,4 @@
+import type { NewsletterSignUpFormProps } from "@/components/ui";
 import type { ComponentData } from "./component-data.types";
 
 export const newsletterSignUpData = {
@@ -12,24 +13,22 @@ export const newsletterSignUpData = {
         title: "Stay updated!",
         description:
           "Join 60,000+ product managers receiving monthly updates on:",
-        checkText: [
-          "Product discovery and building what matters",
-          "Measuring to ensure updates are a success",
-          "And much more!",
-        ],
+        check1: "Product discovery and building what matters",
+        check2: "Measuring to ensure updates are a success",
+        check3: "And much more!",
         imageDesktop: "/illustration-sign-up-desktop.svg",
-        imageTable: "/illustration-sign-up-tablet.svg",
+        imageTablet: "/illustration-sign-up-tablet.svg",
         imageMobile: "/illustration-sign-up-mobile.svg",
         inputLabel: "Email address",
         inputPlaceholder: "email@company.com",
         buttonText: "Subscribe to monthly newsletter",
-      },
+      } as NewsletterSignUpFormProps,
       dialog: {
         title: "Thanks for subscribing!",
         description:
           "A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.",
         buttonText: "Dismiss message",
-      },
+      } as NewsletterSignUpFormProps,
     },
   ],
 } as ComponentData;
