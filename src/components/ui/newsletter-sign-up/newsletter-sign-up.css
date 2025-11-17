@@ -13,6 +13,10 @@
     color: var(--newsletter-grey);
   }
 
+  .newsletter-text-800 {
+    color: var(--newsletter-blue-800);
+  }
+
   .newsletter-text-red {
     color: var(--newsletter-red);
   }
@@ -21,13 +25,14 @@
     background: var(--newsletter-gradient);
   }
 
-  .newsletter-shadow {
-    box-shadow: 0px 16px 32px 0 rgba(255, 97, 85, 0.5);
+  .newsletter-sign-up-wrapper {
+    color: var(--newsletter-blue-800);
   }
 
   .newsletter-text-preset-1 {
-    @apply text-4xl;
+    @apply text-[40px];
     @apply font-bold;
+    @apply leading-none;
   }
 
   .newsletter-text-preset-2-bold {
@@ -43,5 +48,22 @@
   .newsletter-text-preset-3 {
     @apply text-xs;
     @apply font-bold;
+  }
+
+  @media (min-width: 768px) {
+    .newsletter-text-preset-1 {
+      @apply text-[56px];
+    }
+
+    .newsletter-sign-up-wrapper {
+      @apply p-10;
+      @apply rounded-4xl;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .newsletter-sign-up-wrapper {
+      @apply p-8;
+    }
   }
 }

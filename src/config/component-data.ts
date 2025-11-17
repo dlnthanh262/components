@@ -3,8 +3,9 @@ import type { ComponentData } from "./component-data.types";
 
 export const newsletterSignUpData = {
   name: "Newsletter Sign Up",
-  screenshot: "/screenshot.jpg",
-  description: "A responsive Newsletter sign-up form with success message",
+  screenshot: "/screenshot-desktop.png",
+  description:
+    "A responsive Newsletter sign-up form with validation and success message",
   path: "/newsletter-sign-up",
   uiProps: [
     {
@@ -13,13 +14,15 @@ export const newsletterSignUpData = {
         title: "Stay updated!",
         description:
           "Join 60,000+ product managers receiving monthly updates on:",
-        check1: "Product discovery and building what matters",
-        check2: "Measuring to ensure updates are a success",
-        check3: "And much more!",
+        iconPath: "/icon-list.svg",
+        text1: "Product discovery and building what matters",
+        text2: "Measuring to ensure updates are a success",
+        text3: "And much more!",
         imageDesktop: "/illustration-sign-up-desktop.svg",
         imageTablet: "/illustration-sign-up-tablet.svg",
         imageMobile: "/illustration-sign-up-mobile.svg",
         inputLabel: "Email address",
+        inputErrorMessage: "Valid email required",
         inputPlaceholder: "email@company.com",
         buttonText: "Subscribe to monthly newsletter",
       } as NewsletterSignUpFormProps,
@@ -27,6 +30,7 @@ export const newsletterSignUpData = {
         title: "Thanks for subscribing!",
         description:
           "A confirmation email has been sent to <b>ash@loremcompany.com</b>. Please open it and click the button inside to confirm your subscription.",
+        iconPath: "/icon-success.svg",
         buttonText: "Dismiss message",
       } as NewsletterSignUpFormProps,
     },

@@ -6,7 +6,7 @@ I'm truly grateful for any **feedback, comments, or bug reports** that help me i
 
 ## Live demo
 
-https://dlnthanh262.github.io/components/blog-review-card
+https://dlnthanh262.github.io/components/
 
 ## Screenshot
 
@@ -86,12 +86,7 @@ How I use in `blog-review-card.css`
 
 ```
 components/ui/blog-review-card/
-├── blog-review-card.tsx     # Card logic
-├── blog-review-card.css     # Card styles
-└── README.md
 config/ui/blog-review-card/
 ├── component-data.ts        # Component data to display
 └── component-data.types.ts  # Component data template
-types/blog-review-card/
-└── author.ts                # Author template
 ```
